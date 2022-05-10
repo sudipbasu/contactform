@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form Demo!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  </head>
+  <body style="margin-top: 2%;">
+    <div class="container">
+
+      <div class="box">
+        <img src="image_cover.png">
+        <form method="POST" name="f1" action="https://formsubmit.co/909f8430ae0027ff05448d633e1b42df">
+        <div class="field">
+          <label class="label">Name :</label>
+            <div class="control">
+              <input class="input is-primary" type="text" name="Name" placeholder="Enter Name" required>
+        </div>
+            </div>
+            <div class="field">
+              <label class="label">Email :</label>
+                <div class="control">
+                  <input class="input is-primary" type="email" name="Email" placeholder="Enter Email" required>
+                </div>
+            </div>
+               <div class="field">
+              <label class="label">Phone Number :</label>
+                <div class="control">
+                  <input class="input is-primary" type="number" name="Phone" placeholder="Enter Phone Number" required>
+                </div>
+            </div>
+             <div class="field">
+              <label class="label">Message :</label>
+                <div class="control">
+                  <textarea class="input is-primary" name="Message" placeholder="Enter the message" required></textarea>
+                </div>
+            </div>
+            <input type="hidden" name="_captcha" value="false">
+
+
+            <input type="hidden" name="_next" value="http://localhost/form_submit.io/thanku.html">
+
+              <button class="button is-primary" type="submit">Submit</button>
+
+            </form>
+      </div>
+    </div>
+  </body>
+</html>
